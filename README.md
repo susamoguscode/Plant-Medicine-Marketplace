@@ -1,5 +1,3 @@
-# AOL_SE
-
 Website e-commerce sederhana untuk pembelian produk obat tanaman / pupuk
 
 ## 🔧 Pre-Requirements
