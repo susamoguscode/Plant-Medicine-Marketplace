@@ -1,0 +1,151 @@
+.cartContainer {
+    padding: 2rem;
+    background-color: #f0fdf4;
+    min-height: 100vh;
+    color: #1a3d2f;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .cartHeader {
+    font-size: 2rem;
+    color: #166534;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cartItemContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #d1fae5;
+    border: 1px solid #a7f3d0;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(22, 101, 52, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .cartItem:hover {
+    transform: scale(1.01);
+  }
+  
+  .cartItemDetails {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+  }
+  
+  .cartItemImage {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #bbf7d0;
+  }
+  
+  .cartItemInfo h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .cartItemInfo p {
+    margin: 0.3rem 0 0;
+    font-weight: bold;
+    color: #065f46;
+  }
+  
+  .cartItemActions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+  }
+  
+  .quantityButtons {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  
+  .quantityButtons button {
+    background-color: #059669;
+    border: none;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .quantityButtons button:disabled {
+    background-color: #a7f3d0;
+    cursor: not-allowed;
+  }
+  
+  .quantityInput {
+    width: 50px;
+    text-align: center;
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .removeButton {
+    background-color: #dc2626;
+    border: none;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .removeButton:hover {
+    background-color: #b91c1c;
+  }
+  
+  .cartFooter {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #065f46;
+    margin-bottom: 1rem;
+  }
+  
+  .checkoutButton {
+    background-color: #16a34a;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkoutButton:disabled {
+    background-color: #bbf7d0;
+    color: #4ade80;
+    cursor: not-allowed;
+  }
+  
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: #22c55e;
+  }
+  
+  .calculatingTotal {
+    font-style: italic;
+    color: #047857;
+  }
+  

@@ -1,0 +1,188 @@
+/* SellerProducts.module.css */
+
+/* Page Layout */
+.page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    color: #1a1a1a;
+  }
+  
+  /* Heading & Button */
+  .page h1 {
+    font-size: 2rem;
+    color: #217a36;
+    margin-bottom: 1rem;
+  }
+  
+  .addButton {
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .addButton:hover {
+    background-color: #218838;
+  }
+  
+  /* Product List */
+  .productList {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .productCard {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.05);
+  }
+  
+  .productCard img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .productCard h3 {
+    margin: 0.5rem 0;
+    color: #145c2b;
+  }
+  
+  .productCard p {
+    margin: 0.25rem 0;
+  }
+  
+  /* Action Buttons */
+  .productCard button {
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .productCard button:first-of-type {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  .productCard button:last-of-type {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .productCard button:hover:first-of-type {
+    background-color: #e0a800;
+  }
+  
+  .productCard button:hover:last-of-type {
+    background-color: #c82333;
+  }
+  
+  /* Pagination */
+  .pagination {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .pagination button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    background-color: #217a36;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Modal Overlay */
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Modal Box */
+  .modalBox {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 128, 0, 0.2);
+  }
+  
+  .modalBox h2 {
+    margin-top: 0;
+    color: #217a36;
+  }
+  
+  /* Modal Form */
+  .modalForm label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+  }
+  
+  .modalForm input,
+  .modalForm textarea,
+  .modalForm select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .modalForm input[type="file"] {
+    padding: 0.25rem;
+  }
+  
+  .modalForm button {
+    margin-top: 1rem;
+    background-color: #28a745;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .modalForm button:hover {
+    background-color: #218838;
+  }
+  
+  .modalForm .cancelButton {
+    background-color: #6c757d;
+    margin-left: 0.5rem;
+  }
+  
+  .modalForm .cancelButton:hover {
+    background-color: #5a6268;
+  }
+  

@@ -1,0 +1,165 @@
+.container {
+    padding: 2rem;
+    background-color: #f0fdf4;
+    min-height: 100vh;
+    color: #1a3d2f;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #166534;
+    margin-bottom: 1rem;
+  }
+  
+  .topUpButton {
+    background-color: #22c55e;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.8rem 1.4rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 2rem;
+  }
+  
+  .topUpButton:hover {
+    background-color: #16a34a;
+  }
+  
+  .historyTitle {
+    font-size: 1.5rem;
+    color: #166534;
+    margin-bottom: 1rem;
+  }
+  
+  .historyCard {
+    background-color: #d1fae5;
+    border: 1px solid #bbf7d0;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(22, 101, 52, 0.1);
+  }
+  
+  .historyCard p {
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 101, 52, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modalContent {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .modalTitle {
+    font-size: 1.5rem;
+    color: #065f46;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .amounts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  
+  .amountOption {
+    background-color: #bbf7d0;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .amountOption:hover {
+    background-color: #86efac;
+  }
+  
+  .selected {
+    background-color: #4ade80;
+    border-color: #22c55e;
+    color: #065f46;
+  }
+  
+  .manualInput {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .modalButtons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .submitButton {
+    background-color: #16a34a;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .cancelButton {
+    background-color: #ef4444;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .submitButton:hover {
+    background-color: #15803d;
+  }
+  
+  .cancelButton:hover {
+    background-color: #dc2626;
+  }
+  

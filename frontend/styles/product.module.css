@@ -1,0 +1,313 @@
+/* styles/product.module.css */
+
+.productContainer {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #f9fff9;
+  color: #2e4e2e;
+}
+
+.productTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2f602f;
+  text-align: center;
+}
+
+.productHeader {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.productImage img {
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(46, 78, 46, 0.2);
+}
+
+.productInfo {
+  flex: 1;
+}
+
+.productPrice {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e7e34;
+  margin-bottom: 1rem;
+}
+
+.productDetails {
+  margin-bottom: 1.5rem;
+}
+
+.detailItem {
+  margin-bottom: 0.75rem;
+}
+
+.detailLabel {
+  font-weight: bold;
+  color: #2e4e2e;
+  margin-right: 0.5rem;
+}
+
+.detailValue {
+  color: #444;
+}
+
+.sellerInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.sellerImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+.sellerLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #228c22;
+  font-weight: 600;
+}
+
+.quantitySelector {
+  margin-bottom: 1rem;
+}
+
+.quantityLabel {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantityBtn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantityBtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.quantityInput {
+  width: 60px;
+  padding: 0.3rem;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.addToCartBtn {
+  background-color: #2e7d32;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.addToCartBtn:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.divider {
+  margin: 2rem 0;
+  border-top: 1px solid #ccc;
+}
+
+
+.contactSellerBtn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  margin-top: 1rem;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.contactSellerBtn:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+.reviewsSection {
+  margin-top: 2rem;
+}
+
+.reviewsHeading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.reviewCard {
+  border: 1px solid #d0e6d0;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.reviewerImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.reviewerInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewerName {
+  font-weight: bold;
+}
+
+.reviewDate {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.rating {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.reviewText {
+  color: #444;
+}
+
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+.inputLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.ratingInput,
+.commentTextarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.commentTextarea {
+  min-height: 100px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.submitButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancelButton {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reviewModal {
+  background-color: #ffffff;
+  border: 2px solid #4caf50;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 0 15px rgba(0, 128, 0, 0.15);
+}
+
+.modalTitle {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.paginationButton {
+  padding: 0.4rem 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.paginationButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.paginationText {
+  font-weight: bold;
+}
+
+.emptyMessage {
+  font-style: italic;
+  color: #777;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}

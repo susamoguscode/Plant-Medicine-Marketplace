@@ -1,0 +1,95 @@
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2e7d32;
+}
+
+.orderCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: #fafafa;
+}
+
+.customer {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.orderItem {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.productImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 4px;
+}
+
+.productDetails {
+  flex: 1;
+}
+
+.productName {
+  font-weight: bold;
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.acceptButton {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.acceptButton:hover {
+  background-color: #1b5e20;
+}
+
+.declineButton {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.declineButton:hover {
+  background-color: #8e0000;
+}
+
+.button:disabled {
+  background-color: #ccc !important;
+  cursor: not-allowed;
+}
+
+.emptyStateMessage {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #64748b;
+  padding: 2rem;
+  margin-top: 3rem;
+  background-color: #eef2f6;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}

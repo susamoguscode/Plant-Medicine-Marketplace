@@ -1,0 +1,130 @@
+.container {
+  padding: 2.5rem 1.5rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  color: #1a3d2f;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #166534;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.noOrders {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.1rem;
+  padding: 1.5rem;
+  background-color: #e2e8f0;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.orderList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.orderCard {
+  background-color: #d1fae5;
+  border: 1px solid #a7f3d0;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(22, 101, 52, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.orderCard:hover {
+  transform: scale(1.005);
+  box-shadow: 0 6px 10px rgba(22, 101, 52, 0.15);
+}
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed #bbf7d0;
+}
+
+.orderId {
+  font-size: 1.35rem;
+  color: #1a3d2f;
+  font-weight: 600;
+}
+
+.totalPrice {
+  font-size: 1.25rem;
+  color: #065f46;
+  font-weight: 700;
+}
+
+.productList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.productItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px dotted #bbf7d0;
+  font-size: 0.95rem;
+  color: #4a4a4a;
+}
+
+.productItem:last-child {
+  border-bottom: none;
+}
+
+.productName {
+  font-weight: 500;
+  color: #1a3d2f;
+  flex-grow: 1;
+}
+
+.productQuantityPrice {
+  margin-left: 1rem;
+  white-space: nowrap;
+  color: #065f46;
+  font-weight: 600;
+}
+
+.itemStatus {
+  font-weight: 600;
+  margin-left: 1.5rem;
+  padding: 0.3em 0.7em;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: white;
+  min-width: 80px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.statusPending {
+  background-color: #f97316;
+}
+
+.statusShipped {
+  background-color: #3b82f6;
+}
+
+.statusDelivered {
+  background-color: #22c55e;
+}
+
+.statusCanceled {
+  background-color: #ef4444;
+}
